@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15/05 ESTRESAMIENTO DE HARDWARE</title>
+
+
+<link rel="stylesheet" href="../estilo.css">
+
+
+</head>
+<body>
+
+
+<div class="actividad">
+    <h1>13/05 - ESTRESAMIENTO DE HARDWARE</h1>
+    <hr>
+
+<h3>¿QUE ES ESTRESAMIENTO DE HARWARE?</h3>
+<p>Es una simulación controlada donde obligamos a los componentes a trabajar al 100% de su capacidad para comprobar si el sistema es seguro, estable, confiable a máxima presión.</p>
+<ul>
+    <li>proceso de someter componentes informáticos a condiciones extremas de trabajo.</li>
+    <li>Llevar las capacidades técnicas del equipo al límite máximo.</li>
+    <li>Evalúa la estabilidad y el rendimiento general del sistema.</li>
+    <li>Busca determinar el punto exacto de falla o ruptura técnica.</li>
+</ul>
+
+<h3>1.1 OBJETIVO DEL ESTRESAMIENTO DE HARDWARE</h3>
+<ul>
+    <li>Detectar fallos físicos latentes antes del uso cotidiano.</li>
+    <li>Verificar la eficiencia real de los sistemas de refrigeración.</li>
+    <li>Garantizar la confiabilidad operativa de computadoras y servidores (centrales).</li>
+    <li>Comprobar la estabilidad del sistema al realizar modificaciones de velocidad.</li>
+</ul>
+
+<h3>1.2 FALLOS</h3>
+<p>Componentes críticos a estresar: CPU - GPU - RAM - PSU</p>
+<ul>
+    <li>CPU Falla: CPU se congela, da pantallazos azules o reinicio.</li>
+    <li>GPU Falla: Pantalla con líneas extrañas o colores distorsionados (Artifacts).</li>
+    <li>RAM Falla: BSOD (Pantallazo azul).</li>
+    <li>PSU de mala calidad: Todo el sistema puede apagarse por falta de energía</li>
+</ul>
+
+<h3>1.3 RIESGOS Y MEJORAS DE SEGURIDAD</h3>
+<p>El estresamiento de harware es una herramienta de diagnostico potente pero peligrosa si se usa de forma irresponsable Al exigir el MAX rendimiento, la corriente fluye con fuerza y genera mucho calor</p>
+<p>Si:</p>
+<ul>
+    <li>los ventiladores están sucios</li>
+    <li>La pasta térmica esta seca</li>
+    <li>La habitación esta calurosa</li>
+    <li>El componente puede dañarse físicamente</li>
+</ul>
+
+<h3>Riesgos</h3>
+<ul>
+    <li>Elevación extrema de temperatura interna de los componentes</li>
+    <li>Desgaste acelerado de la vida útil de silicio</li>
+    <li>Apagado repentino por actividad de protecciones térmicas</li>
+    <li>Riesgo de daño permanente ante una refrigeración deficiente</li>
+</ul>
+<p>Por eso al iniciar cualquier prueba se debe usar un software que le permita monitorear las temperaturas a tiempo real</p>
+
+<h2>ACTIVIDADES</h2>
+<h3>ACTIVIDAD 1:</h3>
+<p> Si ustedes compraran una PC usada para trabajar de forma intensiva ¿Por qué creen que sería necesario una prueba de estresamiento antes de empezar a usarla?</p>
+<p>Sirve para descubrir problemas ocultos antes de que fallen en su uso necesario.<br>
+Ej: Compro una PC usada para editar video, al usar Prime95 (PC o CPU) la pc se reinicia sola demostrando por: disipador con polvo;<br>
+pasta térmica. Donde no se nota pero en un trabajo importante fallaría al renderizar.</p>
+
+<h3>ACTIVIDAD 2:</h3>
+<p> empresa compra 10 PC's para su área de diseño gráfico, pero no le realiza ninguna prueba de estresamiento (esfuerzo a los 3 meses 5 PC se apagan solas a mitad del dia) Identifiquen cuál de los objetivos del dictado se incumplió y redacten una recomendación técnica para los dueños de la empresa.</p>
+
+<h3>ACTIVIDAD 3:</h3>
+<p>Relacionar sintoma de falla con el componente que lo produce:</p>
+<ol>
+    <li>la pantalla muestra textura deformadas o colores parpadeantes en un entorno 3d (gpu > fallo de renderizado)</li>
+    <li>Sistema Operativo se tilda al procesar una planilla de calculo gigante (CPU > saturación de calculo de hilos)</li>
+    <li>La PC se apaga de golpe sin previo aviso de error (PSU> falla de potencia)</li>
+</ol>
+
+<h3>ACTIVIDAD 4:</h3>
+<p>Elaborar protocolo de seguridad de 3 pasos antes de darle botón de inicio a un programa de estrés</p>
+<ol>
+    <li>INSTALAR UN SOFTWARE DE MONITOREO EN TIEMPO REAL (HWMONITOR) Y VERIFICA TEMPERATURAS: en reposo siguiendo un umbral de temperatura</li>
+    <li>REVISAR:
+        <ul>
+            <li>Ventiladores girando correctamente</li>
+            <li>Pasta térmica no seca</li>
+            <li>Tener buena ventilación en la habitación</li>
+        </ul>
+    </li>
+    <li>definir umbral máximo de temperatura y tiempo limite de la prueba (30 min)
+        <ul>
+            <li>CPU: no superar los 90°</li>
+            <li>GPU: no superar los 85°</li>
+            <li>RAM: mantener bajo de 55°</li>
+            <li>PSU: mantener bajo de 5</li>
+
+        </ul>
+    </li>
+</ol>
+    
+</div>
+
+
+</body>
+</html>

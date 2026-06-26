@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15/05 ESTRESAMIENTO DE HARDWARE</title>
+
+
+<link rel="stylesheet" href="../estilo.css">
+
+
+</head>
+<body>
+
+
+<div class="actividad">
+
+<h1>15/05 ESTRESAMIENTO DE HARDWARE</h1>
+    <hr>
+
+
+    <h3>Guia de Programas para el testeo de Stress</h3>
+
+    <p>Para exigir el Procesador (CPU) y la RAM:</p>
+    <h4>Prime95</h4>
+    <img src="777.jpeg" width="200">
+    <ul>
+        <li>¿Qué hace?:<br>
+        Obliga al procesador a resolver millones de fórmulas y operaciones matemáticas complejas por segundo.</li>
+        <li>¿Qué busca el técnico?:<br>
+        Si el procesador tiene un defecto, degradación por voltaje o la memoria RAM tiene celdas corruptas, el sistema no podrá resolver el cálculo matemático y la PC se congelará o lanzará un pantallazo azul (BSOD) de inmediato.</li>
+    </ul>
+
+    <p>Para exigir la Tarjeta Gráfica (GPU):</p>
+    <h4>FurMark</h4>
+    <img src="888.jpeg" width="200">
+    <ul>
+        <li>¿Qué hace?:<br>
+        Renderiza en tiempo real una imagen tridimensional extremadamente pesada y compleja (conocida popularmente en el soporte técnico como el "anillo peludo" o donnut).</li>
+        <li>¿Qué busca el técnico?:<br>
+        Al procesar este entorno 3D de alta densidad, la placa de video consume el máximo de energía y genera calor extremo.<br>
+        Si la gráfica tiene soldaduras agrietadas o fallas en sus memorias (VRAM), verás líneas extrañas de colores en la pantalla (llamadas artifacts) o la pantalla se irá a negro.</li>
+    </ul>
+
+    <p>El Tablero de Control:</p>
+    <h4>HWMonitor</h4>
+    <img src="999.jpeg" width="200">
+    <ul>
+        <li>¿Qué hace?:<br>
+        Es una herramienta pasiva. No estresa, sino que mide en tiempo real los voltajes, la velocidad de los ventiladores (RPM) y las temperaturas exactas de cada componente.</li>
+        <li>¿Por qué es obligatorio?<br>
+        Para que los componentes no superen los límites seguros (generalmente 85°C - 90°C) y evitar que el hardware sufra daños o se funda.</li>
+    </ul>
+
+    <p>diagrama de flujo simple de correr los programas FurMark y HWMonitor para hacer una prueba segura.</p>
+
+    <h3>ACTIVIDAD 5</h3>
+    <p>REALIZAR: diagrama de flujo simple de correr los programas FurMark y HWMonitor para hacer una prueba segura.</p>
+    <br>
+    <img src="diagr estr 2 1.jpeg" alt="Diagrama de flujo de FurMark y HWMonitor" width="500">
+    <br>
+
+    <hr>
+
+    <h3>Planilla de registro de datos</h3>
+    <ul>
+        <li>Formato obligatorio de control para documentar el comportamiento térmico del hardware.</li>
+        <li>Registra los valores iniciales (reposo), intermedios (bajo carga) y finales (enfriamiento).</li>
+        <li>Permite diagnosticar fallos de refrigeración mediante la comparación de datos cuantitativos.</li>
+    </ul>
+    <p>En el ámbito profesional, ustedes no pueden basarse en suposiciones como "la computadora se siente un poco caliente".<br>
+    Un técnico informático trabaja con datos precisos. Por ello, antes, durante y después de la prueba de esfuerzo, ustedes completaran una planilla técnica.<br>
+    Esta planilla les permitirá comparar cómo reacciona el silicio bajo presión y les dará la evidencia científica necesaria para decidir si el equipo está sano o si requiere mantenimiento urgente.</p>
+
+    <h3>ACTIVIDAD 6</h3>
+    <p>Consigna:<br>
+    Copiar la siguiente estructura de Tabla y luego resolver el caso práctico anotando números correctos en base a los datos que se les brindan a continuacion:</p>
+    <ul>
+        <li>Caso a registrar: Una CPU presenta una temp base a 40°C.<br>
+        Al activar Prime95, a los 5 min alcanza los 72°C. A los 10 minutos se estabiliza en 78°C.<br>
+        Al apagar el Test a los 2 minutos desciende a 45°C. El estado final fue aprobado sin apagarse.</li>
+    </ul>
+    <br>
+    <img src="estr 2.jpeg" alt="Planilla de registro de datos de CPU" width="600">
+    <br>
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>06/03 - Actividad De Diagnostico</title>
+
+
+<link rel="stylesheet" href="../estilo.css">
+
+
+</head>
+<body>
+
+
+<div class="actividad">
+
+    <h1>06/03 - ACTIVIDAD DE DIAGNOSTICO</h1>
+
+    <hr>
+<h2>1- ¿En cuantas partes se divide la placa madre?</h2>
+<p>Se divide entre:</p>
+
+<h3> Ⅰ CONECTORES</h3>
+<ul>
+    <li>De energía (ATX / ATX_V12)</li>
+    <li>De almacenamiento (SATA 2/3, M.2)</li>
+    <li>De ventilación (CPU_FAN, SYS_FAN)</li>
+    <li>Frontales y externos (HDMI, F_USB, F_AUDIO, )</li>
+</ul>
+
+<h3> Ⅱ RANURAS</h3>
+<ul>
+    <li>SOCKET</li>
+    <li>RANURA DIMM</li>
+    <li>DE EXPANSION (video,audio,red)</li>
+</ul>
+
+<h3>Ⅲ CHIPS</h3>
+<ul>
+    <li>CHIPSET (nothbridge, southbridge)</li>
+    <li>PROCESADOR</li>
+    <li>MICROCONTROLADOR</li>
+</ul>
+
+<h3> Ⅳ ARRANQUE</h3>
+<ul>
+    <li>M_BIOS / B_BIOS</li>
+    <li>PILA CR2032</li>
+</ul>
+
+<h3>Ⅴ VRM</h3>
+<ul>
+    <li>MOSFET</li>
+    <li>CONDENSADOR</li>
+    <li>INDUCTOR</li>
+</ul>
+
+<h2>2- ¿Porque el windows se instala por defecto en la particion C?</h2>
+<p>Porque anteriormente se utilizaban los disquetes quienes utilizaban las unidades A y B, y a los mas nuevos de almacenamiento (disco duros / SSD) se los guardo por defecto en el C.</p>
+
+<h2>3- ¿Cual es la diferencia entre actualización de software y sistema operativo?</h2>
+<br>
+<img src="actuali.jpeg" alt="Tabla actualización de software vs sistema operativo" width="500">
+<br>
+
+<h2>4- ¿Como se accede a la Bios para cambiar el orden de arranque?</h2>
+<p>1. Reiniciar el equipo</p>
+<ul>
+    <li>En Windows , seleccionar la opción Reiniciar desde el menú de inicio.</li>
+</ul>
+
+<p>2. Ingresar a la BIOS</p>
+<ul>
+    <li>Durante el reinicio, presionar repetidamente una de las siguientes teclas (según el fabricante de la placa base):</li>
+    <li>SUPR (Delete)</li>
+    <li>ESC</li>
+    <li>F10</li>
+    <li>Continuar presionando hasta que aparezca la pantalla de configuración de la BIOS o UEFI .</li>
+</ul>
+
+<p>3. Acceder al menú de arranque</p>
+<ul>
+    <li>Una vez dentro de la BIOS, utilizar las flechas del teclado para desplazarse hasta la pestaña BOOT (Arranque).</li>
+</ul>
+
+<p>4. Cambiar el orden de arranque</p>
+<ul>
+    <li>Buscar la opción Boot Priority o Boot Order .</li>
+    <li>Utilizar las teclas + y - (o las indicadas por la BIOS) para colocar el pendrive como primer dispositivo de arranque .</li>
+</ul>
+
+<p>5. Guardar la configuración</p>
+<ul>
+    <li>Guardar los cambios realizados (generalmente con la tecla F10 ), confirmar la acción y salir de la BIOS.</li>
+    <li>El equipo se reiniciará utilizando la nueva configuración de arranque.</li>
+</ul>
+
+<h2>5- Como crear un pendrive Booteable</h2>
+<p>Para crear un pendrive Booteable necesitamos:</p>
+<ul>
+    <li>Un pendrive con 16 / 8 GB sin contenido (ya que el programa que creara el pendrive booteable borrara todo)</li>
+    <li>Archivo ISO del S.O (Windows/Linux) conseguido desde la pagina oficial del Sistema Operativo para descargarlo.</li>
+    <li>uso de Rufus o Yumi para grabar para que el programa capten el archivo Iso que descargamos al pendrive para que pueda arrancar desde ahi.</li>
+</ul>
+
+
+</div>
+
+
+</body>
+</html>

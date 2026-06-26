@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>08/05 - ACTIVIDAD 6</title>
+
+
+<link rel="stylesheet" href="../estilo.css">
+
+
+</head>
+<body>
+
+
+    <div class="actividad">
+
+            <h1>08/05 - ACTIVIDAD 6 REDES Y DIRECCIONAMIENTO</h1>
+
+            <hr>
+
+        <H2>Consigna:</H2>
+        <p>tenemos 15 PC’s en un aula, debemos conectarlas a un router wifi.<br>
+        PC 10 y PC2 pierden internet , al revisar tienen la misma IP 192.168.1.10</p>
+
+        <h3>PALABRAS </h3>
+        <ul>
+            <li>LAN (red de área Local): red de computadoras en área limitada</li>
+            <li>IP (protocolo de internet): dirección numérica que identifica un dispositivo en una red</li>
+            <li>DHCP (Protocolo de Configuración Dinámica de Host): servicio de ROUTER que asigna IP automaticamente</li>
+            <li>CONFLICTO IP: cuando 2 pc tienen la misma IP , ninguna tendrá internet</li>
+        </ul>
+
+        <h3>1- Que problema de red ocurrió. Defina conflicto de red. Problema de red: conflicto de ip</h3>
+        <P>DEFINICION: error de red en capa 3 de modelo OSI, que ocurre cuando 2 o mas dispositivos en la misma red LAN usan la misma IP.</P>
+        <p>El SWITCH no sabe a quien enviarle los paquetes, asi que los dos se quedan sin conexión</p>
+
+        <h3>2- Explique 2 causas posibles: una relacionada con DHCP y otra con configuración manual</h3>
+        <ul>
+            <li>DHCP: servidor DHCP del router asigno la “1.10” a la PC n2, pero no detecto que ya estaba en uso .<br> su tiempo expiro mal (leaser time)</li>
+            <li>IP MANUAL: alguien configuro la PC n°2 con IP estatica colocando la “1.10”.<br> y el DHCP también le coloco 1.10 ala N°10 al no detectar su repetición.</li>
+        </ul>
+
+        <h3>3- SOLUCIONES QUE APLICARIA COMO TECNICO:</h3>
+        <p>INMEDIATA:<br> En PC 10 ejecutar símbolo de sistema y colocar el comando<br>
+        <P>ipconfig /release (liberar) Libera la IP asignada por DHCP. Y<br>
+        ipconfig /renew (renovar) Le pide al servidor DHCP una nueva<br>
+        configuración de red.</p>
+
+        <p>DEFINITIVA:<br> Ingresar al router > ir a configuración de DHCP> Crear una reserva de IP > asociar dirección MAC a IP 192.168.1.10</p>
+
+        <h2>CUADRO DETALLADO:</h2>
+        <br>
+        <img src="iyi.png" alt="Cuadro detallado de redes" width="600">
+        <br>
+
+
+    </div>
+
+
+</body>
+</html>

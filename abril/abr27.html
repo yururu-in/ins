@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>27/04 ACTIVIDAD 4</title>
+
+
+<link rel="stylesheet" href="../estilo.css">
+
+
+</head>
+<body>
+
+
+    <div class="actividad">
+
+        <h1>27/04 ACTIVIDAD 4 (Norma de seguridad electrica ESD)</h1>
+        <hr>
+
+        <h2>CONSIGNA</h2>
+        <p> cambiar PSU en el taller describir proceso paso paso desde el ingreso del taller hasta que termina</p>
+
+        <h2>PALABRAS </h2>
+        <ul>
+            <li>MATAFUEGO CLASE C: fuego electrico. usa polvo ABC o CO2(dioxido de carbono)</li>
+            <li>DIYUPTOR DIFERENCIAL: corta energia si detecta fuga a tierra- protege a persona</li>
+            <li>PUESTO A TIERRA: tercera pata de enchufe. deriva descarga electrica, no a la persona</li>
+            <li>ZONA ESD PROTEGIDA: Area de trabajo con mantas y pulseras disipativas</li>
+        </ul>
+
+        <h3>1- Mencione 3 EPP que usaria y porque</h3>
+        <ul>
+            <li>PULSERA ANTIESTATICA:previene ESD (descarga electroestatica ) de placa madre </li>
+            <li>CALZADO DE SEGURIDAD DIELECTRICO: envia descarga a tierra</li>
+            <li>ANTEOJOS DE PROTECCION: protege explocion de capacitor</li>
+        </ul>
+
+        <h3>2-¿Porqué nunca se debe abrir una PSU? ¿ Qué componente interno guarda una carga mortal?</h3>
+        <p>Los capacitores  de etapa primaria almacena 300 V de corriente continua incluso semanas desenchufado. la descarga es mortal.</p>
+
+        <h3>3-Explique que haria si al conectar la PSU nueva salta el diyuntor diferencial del taller</h3>
+        <ol>
+            <li>no rearmar inmediatamente el dipyuntor(no subirlo)</li>
+            <li>desconectar todos los cables de PSU internos conectados de la PM (aislar) [abrir gab y desenchufar ATX,ATX_V12,PCI EXPRESS, SATA,MOLEX,BERG]</li>
+            <li>conectar solo CA 200v y rearmar diferencial (si salta de nuevo , posiblemente psu esta en 115 v, recibiendo doble voltaje (cortocircuito))</li>
+            <li>integrar conectores internos a la PM de a uno (verificar el causante del salto de diyuntor) orden</li>
+            <li>si salta uno ese es el componente con problemas : cortocircuito,capacitor reventado</li>
+        </ol>
+
+        <h2>CUADRO DETALLADO:></h2>
+        <br>
+        <img src="4.jpeg" alt="Cuadro Detallado de Actividad 4" width="600">
+        <br>
+    </div>
+</body>
+</html>

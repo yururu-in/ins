@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>24/04 ACTIVIDAD 3</title>
+
+
+<link rel="stylesheet" href="../estilo.css">
+
+
+</head>
+<body>
+
+
+<div class="actividad">
+
+    <h1>24/04 ACTIVIDAD 3 (RENDIMIENTO - OP. SISTEMA)</h1>
+
+    <hr>
+
+<p><h2>CONSIGNA:</h2> al abrir administrador de tarea en PC con windows 10 se observa:</p>
+<ol>
+    <li>CPU:15%</li>
+    <li>RAM 97%</li>
+    <li>DISCO 100%</li>
+    <li>GPU 2%. pc lenta, al abrir chrome con 10 pestañas</li>
+</ol>
+
+<h2>PALABRAS</h2>
+<ul>
+    <li>cuello de botella(battle neck): componente que limita el rendimiento del sistema</li>
+    <li>administrador de tareas: utilidad de windows SO para ver uso de CPU,RAM,DISCO,RED</li>
+    <li>memoria virtual(paging file): espacio de HDD/SSD. windows usa como RAM de emergencia. muy lento</li>
+    <li>swapping: proceso de mover datos de ram a memoria virtual por falla de RAM fisico. causa lentitud extrema</li>
+</ul>
+
+
+<h3>1 ¿Cuál es el cuello de botella principal? </h3>
+<p>RAM. el disco esta al 100% como consecuencia de RAM con un 97%, no hay problema de procesamiento (15%)</p>
+
+<h3>2-¿Qué es "Swapping" y porque esta el disco a 100% si la RAM esta en 97%
+</h3>
+<p>al agotar ram fisica , mueve datos de ram a archivo de paginacion en el disco (capas de disco) el disco se satura leyendo y escribiendo los datos ya que es 100 mas lenta que RAM,congelandose</p>
+
+<h3>3-Proponga 3 soluciones ordenadas de menor a mayor costo para resolver el problema </h3>
+<ol>
+    <li>cerrar programas/pestañas, liberar ram, limitar inicio automatico (costo cero)</li>
+    <li>optimizar windows, desactivar efectos visuales, ajustar memoria virtual (costo:bajo)</li>
+    <li>ampliar ram fisica instalar 16 gb (costo alto)</li>
+</ol>
+
+<h2>CUADRO DETALLADO</h2>
+<br>
+<img src="3.jpeg" alt="Cuadro Detallado de Actividad 3" width="600">
+
+
+</div>
+
+
+</body>
+</html>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03/04 COMPONENTES DE PLACA MADRE </title>
+
+
+<link rel="stylesheet" href="../estilo.css">
+
+
+</head>
+<body>
+
+
+    <div class="actividad">
+
+        <h1>03/04 - COMPONENTES DE PLACA MADRE</h1>
+
+        <p class="fecha">04 de Marzo</p>
+
+        <hr>
+
+    
+        <h2>1 CHIPS</h2>
+            <h3>Chipset</h3>
+            <ul>
+                <li>¿Qué es? Es un circuito integrado (muchos componentes en una sola pieza ) Se encuentra ubicado debajo del disipador de calor y es considerado uno de los elementos más importantes de la placa.</li>
+                <li>¿Para qué sirve? Sirve para controlar la comunicación, el inicio, la conexión y el tráfico de datos entre los distintos componentes de la placa madre. Determina el rendimiento y la capacidad de expansión de la tarjeta.</li>
+                <li>Northbridge (Puente Norte): Se encarga de los componentes de alta velocidad (Procesador, PCIe, memoria). Por seguridad térmica, suele estar bajo un disipador de calor.</li>
+                <li>Southbridge (Puente Sur): Se encarga de controlar los componentes de baja velocidad (red, almacenamiento, conectores de expansión).</li>
+            </ul>
+
+            <h3>Procesador</h3>
+            <ul>
+                <li>¿Qué es? Es el componente físico principal o "cerebro" del ordenador, creado con silicio y repleto de varios pines.</li>
+                <li>¿Para qué sirve? Sirve para procesar todo el sistema. Interpreta instrucciones, procesa datos y realiza todos los cálculos lógicos y matemáticos para ejecutar los programas del usuario.</li>
+            </ul>
+
+            <h3>Microcontrolador</h3>
+            <ul>
+                <li>¿Qué es? Es un circuito integrado diseñado para realizar tareas específicas de control dentro de la placa.</li>
+                <li>¿Para qué sirve? Sirve para supervisar, condicionar y accionar funciones puntuales. Por ejemplo, se encarga de controlar el VRM, la temperatura y el funcionamiento del ventilador (cooler).</li>
+            </ul>
+
+          <h2>2 ARRANQUE</h2>
+            <h3>M_BIOS / B_BIOS (Dual BIOS)</h3>
+            <ul>
+                <li>¿Qué es? Es el chip de la BIOS (sistema de firmware grabado en la placa) que cuenta con un sistema de doble chip: uno principal (M_BIOS) y uno de respaldo o "Back" (B_BIOS). El chip de la BIOS mantiene la configuración,fecha, hora y orden de arranque</li>
+                <li>¿Para qué sirve? Sirve para realizar el chequeo inicial del equipo al arrancar y verificar que todo esté bien. Al ser Dual BIOS, si el chip principal falla o tiene un error de arranque, el chip de respaldo responde para que la computadora pueda encender igual</li>
+            </ul>
+
+            <h3>Pila CMOS</h3>
+            <ul>
+                <li>¿Qué es? Es una batería redonda de litio (modelos CR2032, CR2025 o CR2016) instalada en la placa madre.</li>
+                <li>¿Para qué sirve? Sirve como fuente de energía continua para el chip de la BIOS cuando la computadora se apaga o se desenchufa. De esta manera, evita que se borren o se reinicien las configuraciones guardadas, la región, la fecha y la hora del sistema.</li>
+            </ul>
+
+         <h2>3 CONECTORES</h2>
+            <h4>DE VENTILACION</h4>
+            <ol>
+                <h3>CPU_FAN</h3>
+                <ul>
+                    <li>¿Qué es? Es un conector de ventilación específico ubicado cerca del zócalo del procesador.</li>
+                    <li>¿Para qué sirve? Sirve para conectar y dar energía al cooler (ventilador) que va colocado justo arriba del disipador del CPU para enfriarlo.</li>
+                </ul>
+
+                <h3>SYS_FAN </h3>
+                <ul>
+                    <li>¿Qué es? Es el conector de ventilación general de la placa base.</li>
+                    <li>¿Para qué sirve? Sirve para conectar y alimentar los coolers o ventiladores internos que van distribuidos en el gabinete de la PC.</li>
+                </ul>
+            </ol>
+            <h4>DE PUERTO FRONTAL/ EXTERNO</h4>
+            <ol> 
+                <h3>F_USB</h3>
+                <ul>
+                    <li>¿Qué es? Es el conector destinado al panel frontal de puertos USB de la computadora.</li>
+                    <li>¿Para qué sirve? Sirve para habilitar y dar conexión a los puertos USB que se encuentran en la parte de adelante del gabinete.</li>
+                </ul>
+
+                <h3>F_AUDIO</h3>
+                <ul>
+                    <li>¿Qué es? Es el conector destinado al panel frontal de audio de la computadora.</li>
+                    <li>¿Para qué sirve? Sirve para dar conexión a las entradas de auriculares y micrófonos que se encuentran en el panel frontal del gabinete.</li>
+                </ul>
+
+                <h3>PUERTOS DE COMPUTADORA</h3>
+                <ul>
+                    <li>¿Qué es? Son las conexiones externas de la placa base.</li>
+                    <li>¿Para qué sirve? Sirven para conectar periféricos y pantallas externas mediante cables HDMI, conexiones de audio o micrófonos.</li>
+                </ul>
+            </ol>
+
+            <h4>DE ENERGIA</h4>
+            <ol>
+                <h3>ATX_V12 (4/8 pines)</h3>
+                <ul>
+                    <li>¿Qué es? Es un conector de energía auxiliar de la fuente que lleva cables amarillos y negros.</li>
+                    <li>¿Para qué sirve? Sirve para entregar energía eléctrica adicional y específica directamente al microprocesador cuando la alimentación del conector ATX general no es suficiente.</li>
+                </ul>
+
+                <p><strong>ATX (20/24 pines)</strong></p>
+                <ul>
+                    <li>¿Qué es? Es el conector de alimentación principal de la placa madre que agrupa cables de todos los colores.</li>
+                    <li>¿Para qué sirve? Sirve para recibir, ingresar y distribuir la energía eléctrica general que llega desde la fuente de poder hacia toda la placa madre para que pueda funcionar.</li>
+                </ul>
+            </ol>
+        
+            <h4>DE SEGURIDAD</h4>
+            <ol>
+                <h3>TPM (Trusted Platform Module)</h3>
+                <ul>
+                    <li>¿Qué es? Es un chip de seguridad física que se conecta o viene integrado en la placa madre. Trabaja guardando claves criptográficas.</li>
+                    <li>¿Para qué sirve? Sirve para proteger el sistema, resguardar datos privados, almacenar claves de seguridad complejas y evitar de forma activa hackeos o accesos no autorizados al equipo.</li>
+                </ul>
+            </ol> 
+
+            <h4>DE ALMACENAMIENTO</h4>
+            <ol>
+                <h3>SATA (1, 2 y 3)</h3>
+                <ul>
+                    <li>¿Qué es? Es el conector estándar de almacenamiento de datos. Su velocidad cambia según la versión (SATA 2 = 3 Gb/s de color azul / SATA 3 = 6 Gb/s de color blanco).</li>
+                    <li>¿Para qué sirve? Sirve para conectar las unidades de almacenamiento como discos duros tradicionales (HDD), unidades de estado sólido (SSD) y lectoras de CD o DVD.</li>
+                </ul>
+            
+
+                <h3>M.2</h3>
+                <ul>
+                    <li>¿Qué es? Es un puerto de conexión de almacenamiento moderno y directo sobre la placa madre.</li>
+                    <li>¿Para qué sirve? Sirve para conectar unidades de almacenamiento SSD de formato compacto. Tiene la ventaja de ser muchísimo más veloz que las conexiones SATA tradicionales.</li>
+                </ul>
+            </ol>
+
+        <h2>4 RANURAS (Slots)</h2>
+        <h3>Socket (Zócalo de CPU)</h3>
+        <ul>
+            <li>¿Qué es? Es el enchufe o base de conexión más importante de toda la placa madre.</li>
+            <li>¿Para qué sirve? Sirve para instalar, calzar y fijar el microprocesador. Su diseño y formato determinan directamente la compatibilidad que tendrá la placa madre con los diferentes modelos de procesadores y chipsets disponibles.</li>
+        </ul>
+
+        <h3>Ranura de Memoria DIMM</h3>
+        <ul>
+            <li>¿Qué es? Son las ranuras largas destinadas a la colocación de módulos de memoria en línea doble (RAM).</li>
+            <li>¿Para qué sirve? Sirve para instalar los módulos de memoria RAM en el equipo, permitiendo que hagan contacto limpio en sus dos lados.</li>
+        </ul>
+
+        <h3>Ranuras de Expansión (18, 19 y 20)</h3>
+        <p>¿Qué es? Son ranuras o slots destinados a sumar placas e infraestructura a la computadora.</p>
+        <ul>
+            <li><h4>18. PCI Express (x16 / x4): </h4>Ranura moderna de alta velocidad. Sirve principalmente para instalar tarjetas de VIDEO (gráficas).</li>
+            <li><h4>19. PCI 1 / 2:</h4> Ranuras antiguas y de uso universal. Servían para agregar componentes comunes como tarjetas de sonido, de red u otros accesorios obsoletos.</li>
+            <li><h4>20. PCI EX 1_1:</h4> Ranuras modernas, de tamaño pequeño pero de muy alta velocidad. Sirven para conectar sintonizadoras de TV, tarjetas de red avanzadas y tarjetas de sonido modernas.</li>
+        </ul>
+
+        <h2>5- VRM</h2>
+        <h3>Mosfet</h3>
+        <ul>
+            <li>¿Qué es? Es un transistor de potencia que se encuentra soldado muy cerca del procesador (CPU) y de la placa gráfica (GPU).</li>
+            <li>¿Para qué sirve? Sirve para controlar y regular de forma precisa el voltaje eléctrico que es enviado de manera directa hacia el CPU y la GPU para que no se quemen.</li>
+        </ul>
+
+        <h3>Choque / Inductor</h3>
+        <ul>
+            <li>¿Qué es? Es un componente electrónico de protección del VRM.</li>
+            <li>¿Para qué sirve? Sirve para almacenar energía en forma de campo magnético. Su función principal es oponerse a los cambios bruscos de corriente, filtrarla y estabilizarla.</li>
+        </ul>
+
+        <h3>Capacitor / Condensador</h3>
+        <ul>
+            <li>¿Qué es? Es un componente cilíndrico de almacenamiento eléctrico.</li>
+            <li>¿Para qué sirve? Sirve para almacenar energía eléctrica de forma temporal y liberarla rápidamente solo cuando el circuito lo necesita. Trabaja filtrando los picos de tensión y oponiéndose a los cambios drásticos en el voltaje.</li>
+        </ul>
+
+    </div>
+</body>
+</html>
